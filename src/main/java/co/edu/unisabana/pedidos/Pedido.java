@@ -1,5 +1,6 @@
 package co.edu.unisabana.pedidos;
 
+import jakarta.validation.constraints.Min;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import java.time.Instant;
@@ -17,6 +18,7 @@ public class Pedido {
  @Size(max = 200)
  private String producto;
  @Positive
+ @Min(value = 1, message = "La cantidad debe ser al menos 1")
  private int cantidad;
  @Column(name = "creado_en")
  private Instant creadoEn;
