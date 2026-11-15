@@ -1,0 +1,21 @@
+# Compilados de Maven
+target/
+*.class
+*.jar
+# IDE
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+# OS
+.DS_Store
+Thumbs.db
+# Secretos y archivos locales
+.env
+.env.local
+application-local.properties
+# Logs
+*.log
+logs/
